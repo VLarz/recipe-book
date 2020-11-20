@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-recipes';
-
-  featureLoaded = 'recipes';
-
-  onNavigate(feature: string): void {
-    this.featureLoaded = feature;
-  }
 }
