@@ -18,6 +18,7 @@ export class RecipeEditComponent implements OnInit {
         (params: Params) => {
           // tslint:disable-next-line:no-string-literal
           this.id = +params['id'];
+          console.log(this.id);
           // tslint:disable-next-line:no-string-literal
           this.editMode = params['id'] != null;
           console.log(this.editMode);
