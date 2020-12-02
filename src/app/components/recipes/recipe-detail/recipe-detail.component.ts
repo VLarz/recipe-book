@@ -1,5 +1,4 @@
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 
 import { ShoppingListService } from '../../shopping-list/services/shopping-list.service';
@@ -38,4 +37,11 @@ export class RecipeDetailComponent implements OnInit {
   onEditRecipe(): void {
     this.router.navigate(['edit'], {relativeTo: this.route});
   }
+
+  onDeleteRecipe(): void {
+    this.recipeService.deleteRecipe(this.id);
+    this.router.navigate(['../'], {relativeTo: this.route});
+  }
+
+  
 }
