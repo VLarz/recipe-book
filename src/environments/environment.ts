@@ -3,8 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  auth: {
+    url: 'https://identitytoolkit.googleapis.com/v1/',
+    key: 'AIzaSyDATtJCYo6vovEBJnlsVyF5qRuJInwTdck',
+  },
+  apiUrl: 'https://ng-course-recipe-book-99081.firebaseio.com',
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
