@@ -5,9 +5,9 @@ import { BehaviorSubject, Observable, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 
 import { environment } from '../../../../environments/environment';
-import { ENDPOINT } from '../../../const/endpoint.const';
-import { ERROR_MESSAGE } from '../../../const/error-message.const';
-import { ErrorResponse } from '../../../enum/error-response.enum';
+import { ENDPOINT } from '../../../shared/const/endpoint.const';
+import { ERROR_MESSAGE } from '../../../shared/const/error-message.const';
+import { ErrorResponse } from '../../../shared/enum/error-response.enum';
 import { AuthResponseData } from '../models/auth-response.model';
 import { User } from '../models/user.model';
 

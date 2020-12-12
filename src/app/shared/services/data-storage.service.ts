@@ -7,7 +7,7 @@ import { environment } from '../../../environments/environment';
 import { AuthService } from '../../components/auth/services/auth.service';
 import { Recipe } from '../../components/recipes/model/recipe.model';
 import { RecipeService } from '../../components/recipes/services/recipe.service';
-import { ENDPOINT } from '../../const/endpoint.const';
+import { ENDPOINT } from '../../shared/const/endpoint.const';
 
 @Injectable({
   providedIn: 'root'
